@@ -4,14 +4,14 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Bhai Pydroid se backend chal raha! LPA pakka 🔥"
+    return "Backend running successfully on Android! 🔥"
 
 @app.route('/garmi')
-def garmi_ka_haal():
+def weather_status():
     return jsonify({
-        "temp": "41°C", 
+        "temp": "41°C",
         "location": "New Chandigarh",
-        "status": "Replit gaya bhaad mein, Pydroid zindabad"
+        "status": "Server running on mobile, no cloud needed"
     })
 
 if __name__ == '__main__':
